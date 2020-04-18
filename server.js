@@ -17,7 +17,8 @@ function fileExists(filename){
 }
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
-var transporter = nodemailer.createTransport('smtp://172.18.0.1');
+console.log('SMTP Server: '+process.env.SMTP_URL)
+var transporter = nodemailer.createTransport(process.env.SMTP_URL);
 
 function sendMessage(data, id){
     var message = 'Nombre: '+data.first_name+' '+data.last_name+'\nEmail: '+data.email+'\nID: '+id+'\nTitulo de Mensaje: '+data.subject+'\nMensaje:\n\n'+data.message;
