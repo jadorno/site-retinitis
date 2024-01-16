@@ -1,0 +1,50 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+  padding: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  margin: 0px 10px 0px 10px;
+  width: 50px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+.marketing-header {
+  padding-bottom: 20px;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.error-message {
+  text-align: center;
+}
+
+.marketing-h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
