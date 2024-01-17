@@ -1,17 +1,21 @@
+---
+permalink: /archivos/2017-06-Paran/
+title: Fundacion Retinitis Pigmentosa de Puerto Rico
+layout: gallery
+---
+
 <div class="col-md-12">
   <h2>Visita a Paran, Peru</h2>
 </div>
 
 <div class="row">
-
-<% if(typeof data.images !== 'undefined'){  %>
-<% data.images.map(function(post, i) { %>
+{% for post in site.data.images-20170604 %}
 
 <div class="col-xs-12 col-sm-6 col-lg-3">
-  <a data-toggle="modal" data-target="#<%= post.label %>">
-    <img src="<%= post.image %>" class="img-thumbnail">
+  <a data-toggle="modal" data-target="#{{ post.label }}">
+    <img src="../../static/archivos/20170604/{{ post.image }}" class="img-thumbnail">
   </a>
-  <div class="modal fade" id="<%= post.label %>" role="dialog">
+  <div class="modal fade" id="{{ post.label }}" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -19,7 +23,7 @@
           <h4 class="modal-title">Imagen</h4>
         </div>
         <div class="modal-body">
-            <img src="<%= post.image %>" class="img-responsive">
+            <img src="../../static/archivos/20170604/{{ post.image }}" class="img-responsive">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
@@ -29,7 +33,5 @@
   </div>
 </div>
 
-<% }); %>
-<% } %>
-
+{% endfor %}
 </div>

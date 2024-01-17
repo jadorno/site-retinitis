@@ -1,0 +1,12 @@
+host: 0.0.0.0
+destination: /workspaces/site-retinitis/build
+include: ["_pages"]
+exclude:
+- .devcontainer
+- .dockerignore
+- .git
+- .github
+- .gitignore
+- data
+- Gemfile
+- Gemfile.lock

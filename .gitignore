@@ -1,2 +1,6 @@
+.jekyll-cache
+build
+._*
+.DS_Store
 data
 static/archivos
