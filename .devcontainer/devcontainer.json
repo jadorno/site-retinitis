@@ -10,6 +10,7 @@
 			"extensions": [
 				"eamodio.gitlens",
 				"streetsidesoftware.code-spell-checker",
+				"streetsidesoftware.code-spell-checker-spanish",
 				"GitHub.vscode-github-actions"
 			]
 		},
@@ -18,6 +19,7 @@
 			"extensions": [
 				"eamodio.gitlens",
 				"streetsidesoftware.code-spell-checker",
+				"streetsidesoftware.code-spell-checker-spanish",
 				"GitHub.vscode-github-actions"
 			]
 		},
